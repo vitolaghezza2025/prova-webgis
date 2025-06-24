@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="anomalie_edilzie_recente_in_aree_incendiate" id="anomalie_edilzie_recente_in_aree_incendiate">
+	<SimpleField name="incendio" type="string"></SimpleField>
+	<SimpleField name="Anno_inter" type="string"></SimpleField>
+	<SimpleField name="CODICE" type="string"></SimpleField>
+</Schema>
+<Folder><name>anomalie_edilzie_recente_in_aree_incendiate</name>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.1">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">11/04/2011</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.6958398969093,40.7570471059895</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.2">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">17/06/2013</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2576393197817,40.3494296052196</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.3">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">15/07/2013</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.0242254573956,40.0084273263279</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.4">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">04/09/2013</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.3280313714095,40.0093668563972</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.5">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">03/07/2013</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-05</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.6171421446912,40.3086024907191</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.6">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-06</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2021655855505,39.8498497521839</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.7">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">06/062014</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-07</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2025093266383,39.8491650386438</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.8">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">31/07/2014</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-08</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.1171782964874,39.9680070583271</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.9">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">05/07/2010</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-09</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.4220785896954,40.5736767048202</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.10">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">21/06/2010</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-10</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.9164434270817,40.2986123488265</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.11">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">15/06/2009</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-11</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.1671171498821,40.6581819251279</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.12">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">06/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-12</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2040851742463,39.8476469043548</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.13">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">06/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="CODICE">2015-13</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2060421669277,39.8480940123535</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.14">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">24/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>16.4442211461737,40.8391399924645</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.15">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">25/06/2017</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>16.7948777447099,41.1313126138202</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.16">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">07/08/2012</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>16.7245077132128,40.8852434715092</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.17">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">07/08/2012</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2247155036501,39.8563542835738</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.18">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-05</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2003544802315,39.8543104279859</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.19">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">11/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-06</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2363426578694,39.8382265436172</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.20">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">08/08/2013</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-07</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2423558661162,40.3678299135706</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.21">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">03/08/2016</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-08</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.8587828244449,40.2985880542717</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.22">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">03/08/2016</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-09</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.8579926674076,40.2985379043142</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.23">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">03/07/2013</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-10</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.3240353658454,41.5059179804265</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.24">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">03/07/2013</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-11</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.3229543784797,41.5056306430944</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.25">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">20/06/2012</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-12</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.4326088854231,41.8117975752858</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.26">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">01/07/2014</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-13</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.2668547157168,40.4884063561772</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.27">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">19/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-14</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.2671485106961,40.4877390998745</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.28">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">20/06/2013</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-15</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.7079783440361,40.313775250715</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.29">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">27/07/2009</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-16</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.005968597665,40.6409470469514</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.30">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">06/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-17</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.5806602008511,40.3372216363516</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.31">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">06/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="CODICE">2023-18</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>16.7735848554511,40.6516895193792</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.32">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">12/07/2009</SimpleData>
+		<SimpleData name="Anno_inter">2015-16</SimpleData>
+		<SimpleData name="CODICE">2016-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.2074567279969,40.8389570822472</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.33">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">08/06/2012</SimpleData>
+		<SimpleData name="Anno_inter">2015-16</SimpleData>
+		<SimpleData name="CODICE">2016-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>16.9974775203522,40.6756367967377</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.34">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">31/07/2013</SimpleData>
+		<SimpleData name="Anno_inter">2015-16</SimpleData>
+		<SimpleData name="CODICE">2016-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2069518647604,40.4475063397249</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.35">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">17/07/2012</SimpleData>
+		<SimpleData name="Anno_inter">2015-16</SimpleData>
+		<SimpleData name="CODICE">2016-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.4293451630174,40.0391032321703</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.36">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">28/07/2015</SimpleData>
+		<SimpleData name="Anno_inter">2016-17</SimpleData>
+		<SimpleData name="CODICE">2017-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.0252103193341,40.6338272982145</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.37">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">28/07/2015</SimpleData>
+		<SimpleData name="Anno_inter">2016-17</SimpleData>
+		<SimpleData name="CODICE">2017-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.0262062093563,40.6326987165602</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.38">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">30/08/2015</SimpleData>
+		<SimpleData name="Anno_inter">2016-17</SimpleData>
+		<SimpleData name="CODICE">2017-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.8598523699285,40.5816254679429</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.39">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">27/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2017-18</SimpleData>
+		<SimpleData name="CODICE">2018-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.7537966832038,40.7161133035127</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.40">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">25/06/2016</SimpleData>
+		<SimpleData name="Anno_inter">2017-18</SimpleData>
+		<SimpleData name="CODICE">2018-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.2884796234953,40.5181962026886</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.41">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">17/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2017-18</SimpleData>
+		<SimpleData name="CODICE">2018-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.224854381139,40.1516509244611</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.42">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">28/07/2015</SimpleData>
+		<SimpleData name="Anno_inter">2017-18</SimpleData>
+		<SimpleData name="CODICE">2018-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.0247630417124,40.633755207134</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.43">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">15/09/2013</SimpleData>
+		<SimpleData name="Anno_inter">2017-18</SimpleData>
+		<SimpleData name="CODICE">2018-05</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.2629295027188,40.5286210958219</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.44">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">04/06/2015</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="CODICE">2019-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>16.1707487739316,41.8719363531099</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.45">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">23/06/2013</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="CODICE">2019-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>16.774777308998,41.0963415359235</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.46">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">10/07/2014</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="CODICE">2019-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.5597810334823,40.6686487775897</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.47">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">10/07/2014</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="CODICE">2019-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.5603963915296,40.6684761122902</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.48">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">23/06/2015</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="CODICE">2019-05</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.2296898295442,40.5972223833605</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.49">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">16/08/2011</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="CODICE">2019-06</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2986700472588,40.1682204196231</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.50">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">11/06/2009</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="CODICE">2019-07</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.0098717101291,40.1124083134962</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.51">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="CODICE">2019-08</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2050154583746,39.855952972871</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.52">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="CODICE">2019-09</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2009098379699,39.8541234588656</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.53">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="CODICE">2019-10</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2014249740754,39.8537039405696</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.54">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">11/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2019-20</SimpleData>
+		<SimpleData name="CODICE">2020-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2418226444226,39.8419842278273</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.55">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">05/07/2012</SimpleData>
+		<SimpleData name="Anno_inter">2019-20</SimpleData>
+		<SimpleData name="CODICE">2020-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.7390196814822,41.709791764942</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.56">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">25/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2019-20</SimpleData>
+		<SimpleData name="CODICE">2020-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.4597254210054,40.661756409017</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.57">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">18/06/2012</SimpleData>
+		<SimpleData name="Anno_inter">2019-20</SimpleData>
+		<SimpleData name="CODICE">2020-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.151988924421,40.5163042710377</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.58">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">18/06/2012</SimpleData>
+		<SimpleData name="Anno_inter">2019-20</SimpleData>
+		<SimpleData name="CODICE">2020-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.5377656899344,41.4417809197269</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.59">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">09/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2020-21</SimpleData>
+		<SimpleData name="CODICE">2021-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2026462199961,39.8552709241692</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.60">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">15/07/2012</SimpleData>
+		<SimpleData name="Anno_inter">2020-21</SimpleData>
+		<SimpleData name="CODICE">2021-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.6475960371038,41.7131503429227</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.61">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">30/06/2017</SimpleData>
+		<SimpleData name="Anno_inter">2020-21</SimpleData>
+		<SimpleData name="CODICE">2021-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.1307090923792,40.5642765501431</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.62">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">08/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2020-21</SimpleData>
+		<SimpleData name="CODICE">2021-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.3018641637404,40.1700768629879</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.63">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">30/06/2021</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.8596635223777,41.904316767911</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.64">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">23/08/2011</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.322930172453,41.5065510768056</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.65">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">25/07/2011</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>16.9266686622953,40.9119731996293</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.66">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">16/07/2012</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.0146076132785,40.6255211041236</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.67">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">26/07/2021</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-05</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.1546815433795,40.3168620973243</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.68">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">22/07/2020</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-06</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.3878884061278,40.3403433364083</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.69">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">19/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-07</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.0096715876602,40.1122596701015</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.70">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">28/06/2016</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-08</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.0245177185068,40.0963693655233</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.71">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">08/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-09</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2500252310641,39.9614141369822</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.72">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">22/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-10</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2280992506304,39.8561214367543</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.73">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">09/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-11</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2018941812874,39.8548607313092</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.74">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-12</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.1996595228609,39.8547663695825</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.75">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">03/08/2015</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-13</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>16.0509304913539,41.7209053671713</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.76">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">22/07/2012</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-14</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.1938055850975,40.8225017459067</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.77">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">09/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-15</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2033175551617,39.8557347927173</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.78">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">30/07/2021</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-16</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.2241868401608,39.8563616415327</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.79">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">25/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-17</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.4593108554347,40.6625208488943</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.80">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">19/06/2012</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-18</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.3021035959117,40.3835273058939</coordinates></Point>
+  </Placemark>
+  <Placemark id="anomalie_edilzie_recente_in_aree_incendiate.81">
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilzie_recente_in_aree_incendiate">
+		<SimpleData name="incendio">03/08/2016</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="CODICE">2022-19</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.8574849861744,40.2980939834447</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

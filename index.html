@@ -21,7 +21,7 @@
             margin: 0;
         }
         </style>
-        <title></title>
+        <title>Esiti delle verifiche su edilizia recente in aree soggette a incendi</title>
     </head>
     <body>
         <div id="map">
@@ -39,7 +39,24 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="data/Individuazioneanomaliaanno2023_0.js"></script>
+        <script src="data/anni2008_2.js"></script>
+        <script src="data/anno2009_3.js"></script>
+        <script src="data/anno2010_4.js"></script>
+        <script src="data/anno2011_5.js"></script>
+        <script src="data/anno2012_6.js"></script>
+        <script src="data/anno2013_7.js"></script>
+        <script src="data/anno2014_8.js"></script>
+        <script src="data/anno2015_9.js"></script>
+        <script src="data/anno2016_10.js"></script>
+        <script src="data/anno2017_11.js"></script>
+        <script src="data/anno2018_12.js"></script>
+        <script src="data/anno2019_13.js"></script>
+        <script src="data/anno2020_14.js"></script>
+        <script src="data/anno2021_15.js"></script>
+        <script src="data/anno2022_16.js"></script>
+        <script src="data/anno2023_17.js"></script>
+        <script src="data/Anomalieediliziepoligoni_18.js"></script>
+        <script src="data/Anomalieedilzierecenteinareeincendiate_19.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -90,6 +107,16 @@
 				popup._contentNode.classList.remove('media');
 			}
 		}
+        var title = new L.Control({'position':'topright'});
+        title.onAdd = function (map) {
+            this._div = L.DomUtil.create('div', 'info');
+            this.update();
+            return this._div;
+        };
+        title.update = function () {
+            this._div.innerHTML = '<h2>Esiti delle verifiche su edilizia recente in aree soggette a incendi</h2>';
+        };
+        title.addTo(map);
         var zoomControl = L.control.zoom({
             position: 'topleft'
         }).addTo(map);
@@ -111,7 +138,32 @@
             }
             map.setMaxBounds(map.getBounds());
         }
-        function pop_Individuazioneanomaliaanno2023_0(feature, layer) {
+        map.createPane('pane_OSMStandard_0');
+        map.getPane('pane_OSMStandard_0').style.zIndex = 400;
+        var layer_OSMStandard_0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            pane: 'pane_OSMStandard_0',
+            opacity: 1.0,
+            attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_OSMStandard_0;
+        map.addLayer(layer_OSMStandard_0);
+        map.createPane('pane_GoogleSatellite_1');
+        map.getPane('pane_GoogleSatellite_1').style.zIndex = 401;
+        var layer_GoogleSatellite_1 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            pane: 'pane_GoogleSatellite_1',
+            opacity: 1.0,
+            attribution: '<a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 20
+        });
+        layer_GoogleSatellite_1;
+        function pop_anni2008_2(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -124,24 +176,48 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">Id</th>\
-                        <td>' + (feature.properties['Id'] !== null ? autolinker.link(String(feature.properties['Id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">incendio</th>\
-                        <td>' + (feature.properties['incendio'] !== null ? autolinker.link(String(feature.properties['incendio']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">tipo_inter</th>\
-                        <td>' + (feature.properties['tipo_inter'] !== null ? autolinker.link(String(feature.properties['tipo_inter']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">anno_inter</th>\
-                        <td class="visible-with-data" id="anno_inter">' + (feature.properties['anno_inter'] !== null ? autolinker.link(String(feature.properties['anno_inter']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">link</th>\
-                        <td>' + (feature.properties['link'] !== null ? autolinker.link(String(feature.properties['link']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -151,42 +227,1569 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_Individuazioneanomaliaanno2023_0_0() {
+        function style_anni2008_2_0() {
             return {
-                pane: 'pane_Individuazioneanomaliaanno2023_0',
+                pane: 'pane_anni2008_2',
+                opacity: 1,
+                color: 'rgba(100,152,210,0.97)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(165,191,221,0.97)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anni2008_2');
+        map.getPane('pane_anni2008_2').style.zIndex = 402;
+        map.getPane('pane_anni2008_2').style['mix-blend-mode'] = 'normal';
+        var layer_anni2008_2 = new L.geoJson(json_anni2008_2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anni2008_2',
+            layerName: 'layer_anni2008_2',
+            pane: 'pane_anni2008_2',
+            onEachFeature: pop_anni2008_2,
+            style: style_anni2008_2_0,
+        });
+        bounds_group.addLayer(layer_anni2008_2);
+        function pop_anno2009_3(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2009_3_0() {
+            return {
+                pane: 'pane_anno2009_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,0,0,0.3254901960784314)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2009_3');
+        map.getPane('pane_anno2009_3').style.zIndex = 403;
+        map.getPane('pane_anno2009_3').style['mix-blend-mode'] = 'normal';
+        var layer_anno2009_3 = new L.geoJson(json_anno2009_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2009_3',
+            layerName: 'layer_anno2009_3',
+            pane: 'pane_anno2009_3',
+            onEachFeature: pop_anno2009_3,
+            style: style_anno2009_3_0,
+        });
+        bounds_group.addLayer(layer_anno2009_3);
+        function pop_anno2010_4(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2010_4_0() {
+            return {
+                pane: 'pane_anno2010_4',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(67,57,196,0.14901960784313725)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2010_4');
+        map.getPane('pane_anno2010_4').style.zIndex = 404;
+        map.getPane('pane_anno2010_4').style['mix-blend-mode'] = 'normal';
+        var layer_anno2010_4 = new L.geoJson(json_anno2010_4, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2010_4',
+            layerName: 'layer_anno2010_4',
+            pane: 'pane_anno2010_4',
+            onEachFeature: pop_anno2010_4,
+            style: style_anno2010_4_0,
+        });
+        bounds_group.addLayer(layer_anno2010_4);
+        function pop_anno2011_5(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2011_5_0() {
+            return {
+                pane: 'pane_anno2011_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(89,225,112,0.6745098039215687)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2011_5');
+        map.getPane('pane_anno2011_5').style.zIndex = 405;
+        map.getPane('pane_anno2011_5').style['mix-blend-mode'] = 'normal';
+        var layer_anno2011_5 = new L.geoJson(json_anno2011_5, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2011_5',
+            layerName: 'layer_anno2011_5',
+            pane: 'pane_anno2011_5',
+            onEachFeature: pop_anno2011_5,
+            style: style_anno2011_5_0,
+        });
+        bounds_group.addLayer(layer_anno2011_5);
+        function pop_anno2012_6(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2012_6_0() {
+            return {
+                pane: 'pane_anno2012_6',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(152,125,183,0.6)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2012_6');
+        map.getPane('pane_anno2012_6').style.zIndex = 406;
+        map.getPane('pane_anno2012_6').style['mix-blend-mode'] = 'normal';
+        var layer_anno2012_6 = new L.geoJson(json_anno2012_6, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2012_6',
+            layerName: 'layer_anno2012_6',
+            pane: 'pane_anno2012_6',
+            onEachFeature: pop_anno2012_6,
+            style: style_anno2012_6_0,
+        });
+        bounds_group.addLayer(layer_anno2012_6);
+        function pop_anno2013_7(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2013_7_0() {
+            return {
+                pane: 'pane_anno2013_7',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(183,72,75,0.5411764705882353)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2013_7');
+        map.getPane('pane_anno2013_7').style.zIndex = 407;
+        map.getPane('pane_anno2013_7').style['mix-blend-mode'] = 'normal';
+        var layer_anno2013_7 = new L.geoJson(json_anno2013_7, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2013_7',
+            layerName: 'layer_anno2013_7',
+            pane: 'pane_anno2013_7',
+            onEachFeature: pop_anno2013_7,
+            style: style_anno2013_7_0,
+        });
+        bounds_group.addLayer(layer_anno2013_7);
+        function pop_anno2014_8(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2014_8_0() {
+            return {
+                pane: 'pane_anno2014_8',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(31,120,180,0.6666666666666666)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2014_8');
+        map.getPane('pane_anno2014_8').style.zIndex = 408;
+        map.getPane('pane_anno2014_8').style['mix-blend-mode'] = 'normal';
+        var layer_anno2014_8 = new L.geoJson(json_anno2014_8, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2014_8',
+            layerName: 'layer_anno2014_8',
+            pane: 'pane_anno2014_8',
+            onEachFeature: pop_anno2014_8,
+            style: style_anno2014_8_0,
+        });
+        bounds_group.addLayer(layer_anno2014_8);
+        function pop_anno2015_9(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2015_9_0() {
+            return {
+                pane: 'pane_anno2015_9',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(128,11,11,0.5647058823529412)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2015_9');
+        map.getPane('pane_anno2015_9').style.zIndex = 409;
+        map.getPane('pane_anno2015_9').style['mix-blend-mode'] = 'normal';
+        var layer_anno2015_9 = new L.geoJson(json_anno2015_9, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2015_9',
+            layerName: 'layer_anno2015_9',
+            pane: 'pane_anno2015_9',
+            onEachFeature: pop_anno2015_9,
+            style: style_anno2015_9_0,
+        });
+        bounds_group.addLayer(layer_anno2015_9);
+        function pop_anno2016_10(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2016_10_0() {
+            return {
+                pane: 'pane_anno2016_10',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(213,209,60,0.5803921568627451)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2016_10');
+        map.getPane('pane_anno2016_10').style.zIndex = 410;
+        map.getPane('pane_anno2016_10').style['mix-blend-mode'] = 'normal';
+        var layer_anno2016_10 = new L.geoJson(json_anno2016_10, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2016_10',
+            layerName: 'layer_anno2016_10',
+            pane: 'pane_anno2016_10',
+            onEachFeature: pop_anno2016_10,
+            style: style_anno2016_10_0,
+        });
+        bounds_group.addLayer(layer_anno2016_10);
+        function pop_anno2017_11(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2017_11_0() {
+            return {
+                pane: 'pane_anno2017_11',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(169,0,167,0.6901960784313725)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2017_11');
+        map.getPane('pane_anno2017_11').style.zIndex = 411;
+        map.getPane('pane_anno2017_11').style['mix-blend-mode'] = 'normal';
+        var layer_anno2017_11 = new L.geoJson(json_anno2017_11, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2017_11',
+            layerName: 'layer_anno2017_11',
+            pane: 'pane_anno2017_11',
+            onEachFeature: pop_anno2017_11,
+            style: style_anno2017_11_0,
+        });
+        bounds_group.addLayer(layer_anno2017_11);
+        function pop_anno2018_12(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2018_12_0() {
+            return {
+                pane: 'pane_anno2018_12',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(145,82,45,0.7372549019607844)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2018_12');
+        map.getPane('pane_anno2018_12').style.zIndex = 412;
+        map.getPane('pane_anno2018_12').style['mix-blend-mode'] = 'normal';
+        var layer_anno2018_12 = new L.geoJson(json_anno2018_12, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2018_12',
+            layerName: 'layer_anno2018_12',
+            pane: 'pane_anno2018_12',
+            onEachFeature: pop_anno2018_12,
+            style: style_anno2018_12_0,
+        });
+        bounds_group.addLayer(layer_anno2018_12);
+        function pop_anno2019_13(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2019_13_0() {
+            return {
+                pane: 'pane_anno2019_13',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(212,7,38,0.4)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2019_13');
+        map.getPane('pane_anno2019_13').style.zIndex = 413;
+        map.getPane('pane_anno2019_13').style['mix-blend-mode'] = 'normal';
+        var layer_anno2019_13 = new L.geoJson(json_anno2019_13, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2019_13',
+            layerName: 'layer_anno2019_13',
+            pane: 'pane_anno2019_13',
+            onEachFeature: pop_anno2019_13,
+            style: style_anno2019_13_0,
+        });
+        bounds_group.addLayer(layer_anno2019_13);
+        function pop_anno2020_14(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2020_14_0() {
+            return {
+                pane: 'pane_anno2020_14',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(51,160,44,0.43529411764705883)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2020_14');
+        map.getPane('pane_anno2020_14').style.zIndex = 414;
+        map.getPane('pane_anno2020_14').style['mix-blend-mode'] = 'normal';
+        var layer_anno2020_14 = new L.geoJson(json_anno2020_14, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2020_14',
+            layerName: 'layer_anno2020_14',
+            pane: 'pane_anno2020_14',
+            onEachFeature: pop_anno2020_14,
+            style: style_anno2020_14_0,
+        });
+        bounds_group.addLayer(layer_anno2020_14);
+        function pop_anno2021_15(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2021_15_0() {
+            return {
+                pane: 'pane_anno2021_15',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(248,214,132,0.4627450980392157)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2021_15');
+        map.getPane('pane_anno2021_15').style.zIndex = 415;
+        map.getPane('pane_anno2021_15').style['mix-blend-mode'] = 'normal';
+        var layer_anno2021_15 = new L.geoJson(json_anno2021_15, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2021_15',
+            layerName: 'layer_anno2021_15',
+            pane: 'pane_anno2021_15',
+            onEachFeature: pop_anno2021_15,
+            style: style_anno2021_15_0,
+        });
+        bounds_group.addLayer(layer_anno2021_15);
+        function pop_anno2022_16(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">comune</th>\
+                        <td>' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2022_16_0() {
+            return {
+                pane: 'pane_anno2022_16',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(166,206,227,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2022_16');
+        map.getPane('pane_anno2022_16').style.zIndex = 416;
+        map.getPane('pane_anno2022_16').style['mix-blend-mode'] = 'normal';
+        var layer_anno2022_16 = new L.geoJson(json_anno2022_16, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2022_16',
+            layerName: 'layer_anno2022_16',
+            pane: 'pane_anno2022_16',
+            onEachFeature: pop_anno2022_16,
+            style: style_anno2022_16_0,
+        });
+        bounds_group.addLayer(layer_anno2022_16);
+        function pop_anno2023_17(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">gid</th>\
+                        <td>' + (feature.properties['gid'] !== null ? autolinker.link(String(feature.properties['gid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">provincia</th>\
+                        <td>' + (feature.properties['provincia'] !== null ? autolinker.link(String(feature.properties['provincia']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td class="visible-with-data" id="comune" colspan="2"><strong>comune</strong><br />' + (feature.properties['comune'] !== null ? autolinker.link(String(feature.properties['comune']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">data</th>\
+                        <td>' + (feature.properties['data'] !== null ? autolinker.link(String(feature.properties['data']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalc</th>\
+                        <td>' + (feature.properties['supcalc'] !== null ? autolinker.link(String(feature.properties['supcalc']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcb</th>\
+                        <td>' + (feature.properties['supcalcb'] !== null ? autolinker.link(String(feature.properties['supcalcb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">supcalcnb</th>\
+                        <td>' + (feature.properties['supcalcnb'] !== null ? autolinker.link(String(feature.properties['supcalcnb']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_min</th>\
+                        <td>' + (feature.properties['x_min'] !== null ? autolinker.link(String(feature.properties['x_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_min</th>\
+                        <td>' + (feature.properties['y_min'] !== null ? autolinker.link(String(feature.properties['y_min']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">x_max</th>\
+                        <td>' + (feature.properties['x_max'] !== null ? autolinker.link(String(feature.properties['x_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">y_max</th>\
+                        <td>' + (feature.properties['y_max'] !== null ? autolinker.link(String(feature.properties['y_max']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_anno2023_17_0() {
+            return {
+                pane: 'pane_anno2023_17',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(232,113,141,0.38823529411764707)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_anno2023_17');
+        map.getPane('pane_anno2023_17').style.zIndex = 417;
+        map.getPane('pane_anno2023_17').style['mix-blend-mode'] = 'normal';
+        var layer_anno2023_17 = new L.geoJson(json_anno2023_17, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_anno2023_17',
+            layerName: 'layer_anno2023_17',
+            pane: 'pane_anno2023_17',
+            onEachFeature: pop_anno2023_17,
+            style: style_anno2023_17_0,
+        });
+        bounds_group.addLayer(layer_anno2023_17);
+
+
+        function pop_Anomalieediliziepoligoni_18(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">incendio</th>\
+                        <td>' + (feature.properties['incendio'] !== null ? autolinker.link(String(feature.properties['incendio']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Anno_inter</th>\
+                        <td>' + (feature.properties['Anno_inter'] !== null ? autolinker.link(String(feature.properties['Anno_inter']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Area__mq_</th>\
+                        <td>' + (feature.properties['Area__mq_'] !== null ? autolinker.link(String(feature.properties['Area__mq_']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">CODICE</th>\
+                        <td>' + (feature.properties['CODICE'] !== null ? autolinker.link(String(feature.properties['CODICE']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_Anomalieediliziepoligoni_18_0() {
+            return {
+                pane: 'pane_Anomalieediliziepoligoni_18',
+                opacity: 1,
+                color: 'rgba(229,19,19,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Anomalieediliziepoligoni_18');
+        map.getPane('pane_Anomalieediliziepoligoni_18').style.zIndex = 418;
+        map.getPane('pane_Anomalieediliziepoligoni_18').style['mix-blend-mode'] = 'normal';
+        var layer_Anomalieediliziepoligoni_18 = new L.geoJson(json_Anomalieediliziepoligoni_18, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Anomalieediliziepoligoni_18',
+            layerName: 'layer_Anomalieediliziepoligoni_18',
+            pane: 'pane_Anomalieediliziepoligoni_18',
+            onEachFeature: pop_Anomalieediliziepoligoni_18,
+            style: style_Anomalieediliziepoligoni_18_0,
+        });
+        bounds_group.addLayer(layer_Anomalieediliziepoligoni_18);
+        map.addLayer(layer_Anomalieediliziepoligoni_18);
+        
+function pop_Anomalieedilzierecenteinareeincendiate_19(feature, layer) {
+    layer.on({
+        mouseout: function(e) {
+            for (var i in e.target._eventParents) {
+                if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                    e.target._eventParents[i].resetStyle(e.target);
+                }
+            }
+        },
+        mouseover: highlightFeature,
+    });
+
+    var popupContent = '<table>\
+        <tr>\
+            <th scope="row">incendio</th>\
+            <td>' + (feature.properties['incendio'] !== null ? autolinker.link(String(feature.properties['incendio']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+        </tr>\
+        <tr>\
+            <th scope="row">Anno_inter</th>\
+            <td>' + (feature.properties['Anno_inter'] !== null ? autolinker.link(String(feature.properties['Anno_inter']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+        </tr>\
+        <tr>\
+            <th scope="row">CODICE</th>\
+            <td>' + (feature.properties['CODICE'] !== null ? autolinker.link(String(feature.properties['CODICE']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+        </tr>\
+        <tr>\
+            <th scope="row">link</th>\
+            <td>' + (feature.properties['link'] !== null ? autolinker.link(String(feature.properties['link']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+        </tr>\
+    </table>';
+
+    var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+
+    // Coordinate del punto
+    var lat = feature.geometry.coordinates[1];
+    var lon = feature.geometry.coordinates[0];
+
+    // Link a Google Maps
+    var googleMapsLink = '<a href="https://www.google.com/maps/search/?api=1&query=' + lat + ',' + lon + '" target="_blank">Apri in Google Maps</a>';
+
+    // Link a Google Earth Web, con altezza (livello di zoom)
+    var zoomAlt = 500; // puoi modificare questo valore
+    var googleEarthLink = '<a href="https://earth.google.com/web/@' + lat + ',' + lon + ',' + zoomAlt + 'a,0d,0y,0h,0t,0r" target="_blank">Apri in Google Earth</a>';
+
+    // Aggiungi i link al contenuto
+    content += '<br>' + googleMapsLink + '<br>' + googleEarthLink;
+
+    layer.on('popupopen', function(e) {
+        addClassToPopupIfMedia(content, e.popup);
+    });
+    layer.bindPopup(content, { maxHeight: 400 });
+ 
+        }
+
+        function style_Anomalieedilzierecenteinareeincendiate_19_0() {
+            return {
+                pane: 'pane_Anomalieedilzierecenteinareeincendiate_19',
                 radius: 8.0,
                 opacity: 1,
-                color: 'rgba(128,17,25,1.0)',
+                color: 'rgba(179,92,21,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(219,30,42,0.8)',
+                fillColor: 'rgba(247,246,30,1.0)',
                 interactive: true,
             }
         }
-        map.createPane('pane_Individuazioneanomaliaanno2023_0');
-        map.getPane('pane_Individuazioneanomaliaanno2023_0').style.zIndex = 400;
-        map.getPane('pane_Individuazioneanomaliaanno2023_0').style['mix-blend-mode'] = 'normal';
-        var layer_Individuazioneanomaliaanno2023_0 = new L.geoJson(json_Individuazioneanomaliaanno2023_0, {
+        map.createPane('pane_Anomalieedilzierecenteinareeincendiate_19');
+        map.getPane('pane_Anomalieedilzierecenteinareeincendiate_19').style.zIndex = 419;
+        map.getPane('pane_Anomalieedilzierecenteinareeincendiate_19').style['mix-blend-mode'] = 'normal';
+        var layer_Anomalieedilzierecenteinareeincendiate_19 = new L.geoJson(json_Anomalieedilzierecenteinareeincendiate_19, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Individuazioneanomaliaanno2023_0',
-            layerName: 'layer_Individuazioneanomaliaanno2023_0',
-            pane: 'pane_Individuazioneanomaliaanno2023_0',
-            onEachFeature: pop_Individuazioneanomaliaanno2023_0,
+            dataVar: 'json_Anomalieedilzierecenteinareeincendiate_19',
+            layerName: 'layer_Anomalieedilzierecenteinareeincendiate_19',
+            pane: 'pane_Anomalieedilzierecenteinareeincendiate_19',
+            onEachFeature: pop_Anomalieedilzierecenteinareeincendiate_19,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_Individuazioneanomaliaanno2023_0_0(feature));
+                return L.circleMarker(latlng, style_Anomalieedilzierecenteinareeincendiate_19_0(feature));
             },
         });
-        bounds_group.addLayer(layer_Individuazioneanomaliaanno2023_0);
-        map.addLayer(layer_Individuazioneanomaliaanno2023_0);
+        bounds_group.addLayer(layer_Anomalieedilzierecenteinareeincendiate_19);
+        map.addLayer(layer_Anomalieedilzierecenteinareeincendiate_19);
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
             position: 'topleft',
@@ -197,8 +1800,87 @@
         .className += ' fa fa-search';
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
-        var overlaysTree = [
-            {label: '<img src="legend/Individuazioneanomaliaanno2023_0.png" /> Individuazione anomalia anno 2023', layer: layer_Individuazioneanomaliaanno2023_0},]
+//============== INIZIO CODICE DA AGGIUNGERE PER IL WFS CATASTO ==============
+
+// 1. Definiamo i parametri del nostro layer WFS
+var wfsUrl = 'https://wfs.cartografia.agenziaentrate.gov.it/inspire/wfs/owfs01.php';
+
+var wfsParams = {
+    service: 'WFS',
+    version: '2.0.0',
+    request: 'GetFeature',
+    typeName: 'CP.CadastralParcel', // Questo è il nome del layer delle Particelle Catastali
+    outputFormat: 'application/json', // Chiediamo i dati in formato GeoJSON
+    srsName: 'EPSG:4326', // Specifichiamo il sistema di coordinate
+    // NOTA: senza un filtro BBOX, questa richiesta potrebbe essere molto pesante o fallire.
+    // Per ora, aggiungiamo un limite al numero di feature per un test.
+    count: 200 // LIMITIAMO A 200 PARTICELLE PER NON SOVRACCARICARE IL BROWSER
+};
+
+// Costruiamo l'URL completo
+var fullWfsUrl = wfsUrl + L.Util.getParamString(wfsParams);
+
+// Creiamo un layer vuoto che popoleremo con i dati dal WFS
+var catastoWfsLayer = L.featureGroup();
+
+// 2. Usiamo fetch per caricare i dati e aggiungerli al layer
+console.log("Sto caricando i dati WFS da:", fullWfsUrl);
+fetch(fullWfsUrl)
+    .then(response => response.json()) // Convertiamo la risposta in JSON
+    .then(data => {
+        // 3. Creiamo un layer GeoJSON con i dati ricevuti
+        L.geoJson(data, {
+            // Definiamo uno stile per le particelle
+            style: function (feature) {
+                return {
+                    color: '#ff0000', // Bordo rosso
+                    weight: 1.5,
+                    opacity: 0.8,
+                    fillOpacity: 0.1
+                };
+            },
+            // Aggiungiamo un popup a ogni particella
+            onEachFeature: function (feature, layer) {
+                // Il nome della proprietà potrebbe variare, ispeziona "feature.properties" per trovare quelli giusti
+                var popupText = "<b>Particella Catastale</b><br>";
+                if (feature.properties && feature.properties.label) {
+                    popupText += "Label: " + feature.properties.label;
+                }
+                layer.bindPopup(popupText);
+            }
+        }).addTo(catastoWfsLayer); // Aggiungiamo le feature al nostro gruppo di layer
+        console.log("Dati WFS caricati e aggiunti alla mappa.");
+    })
+    .catch(error => {
+        console.error("Errore nel caricamento del WFS:", error);
+    });
+
+//=============== FINE CODICE DA AGGIUNGERE PER IL WFS CATASTO ===============
+var overlaysTree = [
+    // RIGA DA AGGIUNGERE
+   	 {label: 'Particelle Catastali (WFS)', layer: catastoWfsLayer},
+
+            {label: '<img src="legend/Anomalieedilzierecenteinareeincendiate_19.png" /> Anomalie edilzie recente in aree incendiate', layer: layer_Anomalieedilzierecenteinareeincendiate_19},
+            {label: '<img src="legend/Anomalieediliziepoligoni_18.png" /> Anomalie edilizie poligoni', layer: layer_Anomalieediliziepoligoni_18},
+        {label: '<b>Catasto incendi</b>',  selectAllCheckbox: true, children: [
+            {label: '<img src="legend/anno2023_17.png" /> anno 2023', layer: layer_anno2023_17},
+            {label: '<img src="legend/anno2022_16.png" /> anno 2022', layer: layer_anno2022_16},
+            {label: '<img src="legend/anno2021_15.png" /> anno 2021', layer: layer_anno2021_15},
+            {label: '<img src="legend/anno2020_14.png" /> anno 2020', layer: layer_anno2020_14},
+            {label: '<img src="legend/anno2019_13.png" /> anno 2019', layer: layer_anno2019_13},
+            {label: '<img src="legend/anno2018_12.png" /> anno 2018', layer: layer_anno2018_12},
+            {label: '<img src="legend/anno2017_11.png" /> anno 2017', layer: layer_anno2017_11},
+            {label: '<img src="legend/anno2016_10.png" /> anno 2016', layer: layer_anno2016_10},
+            {label: '<img src="legend/anno2015_9.png" />  anno 2015', layer: layer_anno2015_9},
+            {label: '<img src="legend/anno2014_8.png" /> anno 2014', layer: layer_anno2014_8},
+            {label: '<img src="legend/anno2013_7.png" /> anno 2013', layer: layer_anno2013_7},
+            {label: '<img src="legend/anno2012_6.png" /> anno 2012', layer: layer_anno2012_6},
+            {label: '<img src="legend/anno2011_5.png" /> anno 2011', layer: layer_anno2011_5},
+            {label: '<img src="legend/anno2010_4.png" /> anno 2010', layer: layer_anno2010_4},
+            {label: '<img src="legend/anno2009_3.png" /> anno 2009', layer: layer_anno2009_3},
+            {label: '<img src="legend/anni2008_2.png" /> anni 2008', layer: layer_anni2008_2},]},
+            {label: "Google Satellite", layer: layer_GoogleSatellite_1},
+            {label: "OSM Standard", layer: layer_OSMStandard_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
             //selectorBack: false,
@@ -261,5 +1943,15 @@
         });       
         setBounds();
         </script>
-    </body>
+</body>
+    <div id="map">
+<div style="position: absolute; bottom: 10px; left: 10px; background: white; padding: 10px; z-index: 1000;">
+    <a href="download/Anomalie_poligoni.kml" download="Anomalie_poligoni.kml">Scarica KML - Anomalie poligoni</a><br>
+    <a href="download/Anomalie_punti.kml" download="Anomalie_punti.kml">Scarica KML - Anomalie punti</a>
+</div>
+    <script src="js/qgis2web_expressions.js"></script>
+    <!-- rest of your scripts -->
+<script>
+/</body>
+
 </html>

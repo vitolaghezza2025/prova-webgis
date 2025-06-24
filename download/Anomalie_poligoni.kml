@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="anomalie_edilizie_poligoni" id="anomalie_edilizie_poligoni">
+	<SimpleField name="incendio" type="string"></SimpleField>
+	<SimpleField name="Anno_inter" type="string"></SimpleField>
+	<SimpleField name="Area__mq_" type="float"></SimpleField>
+	<SimpleField name="CODICE" type="string"></SimpleField>
+</Schema>
+<Folder><name>anomalie_edilizie_poligoni</name>
+  <Placemark id="anomalie_edilizie_poligoni.1">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">11/04/2011</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">456.97466799100</SimpleData>
+		<SimpleData name="CODICE">2015-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.6957134999842,40.7572318921179 17.6957097196199,40.7572531486669 17.6957457143552,40.7572503372486 17.695824679645,40.7572117520928 17.6958366135243,40.7572059207806 17.6958751674407,40.7571494271442 17.6958890345679,40.7571394456733 17.6959293291677,40.7570980228144 17.695947817657,40.7570790166214 17.6959568896542,40.7570522450493 17.6959263375673,40.7569296836142 17.6958158323143,40.7568331889044 17.6957619852418,40.7569420121852 17.6958454190983,40.7571012380207 17.6957107325826,40.7571634321923 17.6957134999842,40.7572318921179</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.2">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">17/06/2013</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">701.07783838500</SimpleData>
+		<SimpleData name="CODICE">2015-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2576677452986,40.3493133458353 18.2576686986639,40.3493206851051 18.257593209339,40.3492765075183 18.2575393874358,40.3492713523754 18.2574890958994,40.3493394964018 18.2574672961595,40.3493525030059 18.2574967288241,40.349457052223 18.2575083692299,40.3494984005788 18.2575251736456,40.3495453301913 18.2577743310541,40.3495707150175 18.2578087351421,40.3494572637916 18.2577956237387,40.3493661233881 18.2576677452986,40.3493133458353</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.3">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">15/07/2013</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">1624.98469173000</SimpleData>
+		<SimpleData name="CODICE">2015-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.0239769269428,40.0084585022796 18.024291389068,40.0085505547848 18.0243888004367,40.0085909661538 18.0243417175677,40.0085948391871 18.024387884654,40.0086118179534 18.0244852384783,40.0086169892717 18.0245323771835,40.0086176645521 18.0246747632707,40.0084452100523 18.024270108187,40.0083213640118 18.0240047110122,40.0082348717586 18.0238917805689,40.0082883463027 18.0237591013216,40.008420183051 18.0237614739796,40.0084739084744 18.0237810402721,40.0084783639163 18.0238411280267,40.0084326649668 18.0239905183412,40.0084564197977 18.0239769269428,40.0084585022796</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.4">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">04/09/2013</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">2588.93873253000</SimpleData>
+		<SimpleData name="CODICE">2015-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.3277729522508,40.009700754207 18.3278789570262,40.0096309015454 18.3280423859043,40.0096107858305 18.3281659296661,40.0096282892964 18.3282640358735,40.0095604738191 18.3283121421683,40.0095070947913 18.3281889543651,40.0094066445677 18.3283695513528,40.0092974604339 18.3285551830395,40.0092560413263 18.3283753154281,40.0092281117461 18.328097795674,40.0091559198002 18.3280704264511,40.0090878420235 18.3280754367853,40.0089791197701 18.328118503749,40.0088237865997 18.3280806327026,40.0088110814102 18.3277573785477,40.0094468169941 18.3277851883465,40.0094617439179 18.3277523302764,40.0095494313327 18.3276633243702,40.0097869578415 18.3277016115523,40.0098011504149 18.3277729522508,40.009700754207</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.5">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">03/07/2013</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">682.73524326100</SimpleData>
+		<SimpleData name="CODICE">2015-05</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.6169302286943,40.3083462522558 17.6170325059717,40.3083271270357 17.6173332513327,40.3091701248659 17.6174071082706,40.3093282880142 17.617453102926,40.3093153784858 17.6173998487075,40.3091533639453 17.6173621551741,40.3091446840692 17.6170581899514,40.3082801197328 17.6170519806825,40.3082545784555 17.6170192998448,40.3081328452938 17.6169756526381,40.3079702626277 17.6169426638673,40.3079705326932 17.6169826502424,40.308135695127 17.6169754435957,40.3081362555067 17.6169895225629,40.3081971894589 17.6169308803715,40.308196745247 17.6169326116017,40.3082112233701 17.616889788707,40.3082176125044 17.6169302286943,40.3083462522558</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.6">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">1979.33224004000</SimpleData>
+		<SimpleData name="CODICE">2015-06</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2020591838108,39.8499830302475 18.2020663518751,39.8499824262355 18.2021310878009,39.850047439878 18.2021160345012,39.850057745862 18.2021772687447,39.8500929418166 18.2022464046815,39.8500581760668 18.2022993313315,39.850031561281 18.2025346201513,39.8499132430125 18.2024912502089,39.8498556994939 18.2023681284446,39.8496923400973 18.2022878522913,39.849616606456 18.2021468224368,39.8496713114168 18.2021199632533,39.8496142205415 18.2020287954206,39.8496219027838 18.2020458147445,39.8496546144123 18.2018834127624,39.8497934295293 18.2018481797955,39.8498189661092 18.2018275061899,39.8498339501642 18.2018166395311,39.849949786322 18.2018685353098,39.8499977684473 18.2019433837148,39.8499923652485 18.2019783948257,39.8499898378299 18.2020591838108,39.8499830302475</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.7">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">06/062014</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">254.89940962200</SimpleData>
+		<SimpleData name="CODICE">2015-07</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2024989393397,39.8491535655237 18.202537153747,39.8491933289807 18.2024549511648,39.849235078936 18.202452059959,39.8492317082628 18.2024276538313,39.8492385193929 18.2024000519343,39.8492086286598 18.2023684131214,39.8492262459563 18.2024378352161,39.8493111651397 18.202604440127,39.8492236243128 18.2025439082692,39.8491229829957 18.2025501336784,39.8490930936787 18.2026008851031,39.8490807282439 18.2025742277314,39.8490128276623 18.2024614310357,39.8490340574032 18.202501552217,39.8491521106019 18.2024989393397,39.8491535655237</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.8">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">31/07/2014</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">1596.48853369000</SimpleData>
+		<SimpleData name="CODICE">2015-08</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.1174198623652,39.9683501272716 18.117385781341,39.9680802532471 18.1175017478491,39.9680705974984 18.1174790270677,39.9678906814595 18.1173779221964,39.9678990997824 18.1173390810623,39.9679192682052 18.1172218134629,39.9678740626097 18.1172348389031,39.9678201092274 18.116771870098,39.9678586555727 18.1167945888836,39.9680385718211 18.1171424882974,39.9680096062712 18.117153848233,39.9680995643322 18.1172698148022,39.9680899088584 18.1173038953494,39.9683597829298 18.1174198623652,39.9683501272716</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.9">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">05/07/2010</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">675.19770793700</SimpleData>
+		<SimpleData name="CODICE">2015-09</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.4220679019015,40.5735550135401 17.4220300948084,40.5735498713491 17.4220327367867,40.5735723801686 17.4220093493251,40.5735676816141 17.4219189435373,40.5736122864856 17.4218443260552,40.5736786769395 17.4219315261991,40.5737194151972 17.4219292015682,40.5737302819756 17.4219502070508,40.5737580593666 17.422062736291,40.5737999323986 17.4221193356891,40.5738162859526 17.4221928246176,40.5738017791646 17.4221980056694,40.573751335602 17.4222242292953,40.573701975869 17.4222754930815,40.5736536160809 17.4222824159201,40.5736237275071 17.4222573027278,40.5735929857593 17.4222048661013,40.5735811208347 17.4221411261461,40.5735705613783 17.4220679019015,40.5735550135401</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.10">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">21/06/2010</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">680.43131866400</SimpleData>
+		<SimpleData name="CODICE">2015-10</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.9162449271664,40.298774765984 17.91625399739,40.2988477421466 17.9162664878936,40.2988467323998 17.9162406925401,40.2988950797044 17.9162856911579,40.2988939445081 17.9163414278287,40.2988432505516 17.9163418000873,40.2988406440454 17.9163463731133,40.298808624301 17.9163649965295,40.2987933887825 17.9163632055303,40.2987789791695 17.9163836720749,40.2987781106083 17.9164194106411,40.2987435126837 17.9164516296657,40.2987123219316 17.9164700420611,40.2986911371395 17.9164936618509,40.2986422585144 17.9165021225702,40.2986077695438 17.9165422349535,40.2985782655027 17.9165945635406,40.2985500214952 17.916611562733,40.2985407082088 17.9166102914167,40.2985111675783 17.9166432859063,40.2984669300031 17.9166393541258,40.2984237078231 17.9166240673716,40.2983826716115 17.9165540599977,40.2983592916818 17.916544611658,40.2983662793816 17.9162449271664,40.298774765984</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.11">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">15/06/2009</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">321.75033997800</SimpleData>
+		<SimpleData name="CODICE">2015-11</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.1671095440498,40.6581914105111 17.1671592356539,40.6582538736716 17.1672880331892,40.6582495485446 17.1673245692888,40.6582374225528 17.1673325092237,40.6582120103088 17.1672929774523,40.6582089393354 17.167193117203,40.6581984212195 17.1671851079509,40.6581981258402 17.1671653451733,40.6581633257952 17.1671928640469,40.6581493028247 17.1671881027313,40.6581073839756 17.1671863090929,40.658091592681 17.1671029696348,40.658081138769 17.1669506020262,40.6581464597083 17.1669408753864,40.6581551096586 17.1671201863039,40.6583113297993 17.1671170008638,40.6582593379958 17.1670572054231,40.6581591800838 17.1671217872243,40.6581544779247 17.1671095440498,40.6581914105111</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.12">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">06/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">705.94033227500</SimpleData>
+		<SimpleData name="CODICE">2015-12</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2041600631878,39.8477505200759 18.2041676290006,39.8477533955108 18.2042295701084,39.8477321657925 18.2042151988558,39.847619195593 18.2043009780524,39.847611965307 18.2042962175892,39.8475371608635 18.2042732383461,39.847523381046 18.2040057580834,39.8475459264914 18.2039872019945,39.8475791506949 18.2038634761144,39.8476131242408 18.2038741035043,39.8476966682288 18.2039251583802,39.8476756295495 18.2039489223322,39.8477325617926 18.2039842011619,39.8477944026086 18.2040029493243,39.8477899177925 18.2040306877849,39.8477832823677 18.2041600631878,39.8477505200759</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.13">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">06/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2014-15</SimpleData>
+		<SimpleData name="Area__mq_">1444.05866018000</SimpleData>
+		<SimpleData name="CODICE">2015-13</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2062170312109,39.8478673195029 18.2055623658457,39.8479989289747 18.2055824557753,39.8480704413943 18.2056078804652,39.848138375356 18.2056999210977,39.8482604318617 18.2057704839912,39.8483540060438 18.2057418898828,39.8483997253381 18.2057051709818,39.8484216726179 18.2056177389968,39.8484298109311 18.2056072006158,39.8484458697486 18.2056142670101,39.848501406834 18.2055600196784,39.8485059800039 18.2055722379695,39.8485479244406 18.2057181820688,39.8485313183772 18.2057337444339,39.8485209922755 18.2058843630588,39.84842812318 18.2058673371896,39.8483778988427 18.205865271819,39.8483718062335 18.2058082492285,39.8483511372393 18.2057399798667,39.8482395836667 18.2057331600781,39.8482264027411 18.2056869761388,39.8481371407203 18.2056662692063,39.8480944295033 18.2056369694185,39.8480712223501 18.2056524760714,39.8480659790179 18.2057217142125,39.848042567189 18.2060381477009,39.8479537366514 18.2062314657187,39.8479300850503 18.206392577843,39.8483125455319 18.2064524103816,39.8483034567449 18.206341916422,39.8480391366601 18.2063284476388,39.8479411292735 18.2063575577143,39.8479023737983 18.2068407182098,39.8478190418221 18.2068316221504,39.8477830683234 18.2063607676584,39.847838423149 18.2062170312109,39.8478673195029</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.14">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">24/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">6456.82145645000</SimpleData>
+		<SimpleData name="CODICE">2023-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>16.4436642845318,40.8397250529691 16.4438047734413,40.8397618846245 16.4438515333362,40.8397709468321 16.4438944800364,40.8397993518288 16.4439412179564,40.8398090761807 16.4440985869111,40.8398418184069 16.4442509087922,40.8396437446482 16.4442590540361,40.8396276583345 16.4445147409132,40.8391226896565 16.4446230668463,40.8388855261954 16.4446521305327,40.838821895296 16.4446394673342,40.8386332174413 16.4446515573985,40.8386362424269 16.4446510402356,40.8384687150062 16.4443547396386,40.8383714854851 16.4436642845318,40.8397250529691</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.15">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">25/06/2017</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">1084.66877746000</SimpleData>
+		<SimpleData name="CODICE">2023-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>16.7946305380771,41.1313267105347 16.794607209747,41.1314005549518 16.7945834112783,41.131470923322 16.794634083381,41.1314796671717 16.7947349068745,41.1314780959923 16.7949867051623,41.1314646382537 16.795060243967,41.1313872288466 16.7949696849374,41.1313028445644 16.795190561409,41.1310801456406 16.7952351692375,41.1310044640806 16.7952051957498,41.1310204390086 16.7946305380771,41.1313267105347</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.16">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">07/08/2012</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">124.28144739300</SimpleData>
+		<SimpleData name="CODICE">2023-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>16.7244016129919,40.8852666071343 16.7244031399498,40.885261737738 16.724401487201,40.8852617624549 16.7244016129919,40.8852666071343</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>16.7244031399498,40.885261737738 16.7244232732868,40.8852614366417 16.7244447675698,40.8852611151883 16.7245260066179,40.8852843833755 16.7245625597203,40.8853030023687 16.7246002142028,40.8852958118979 16.7245696414745,40.8852068944115 16.7244656783942,40.8851941493796 16.7244282871881,40.8852054333059 16.7244118753014,40.8852338811028 16.7244031399498,40.885261737738</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.17">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">07/08/2012</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">475.33137176900</SimpleData>
+		<SimpleData name="CODICE">2023-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.224588849444,39.8564326081657 18.2247347006186,39.8565095791905 18.2248763235557,39.8562982972086 18.2246431097135,39.8562046916551 18.224588849444,39.8564326081657</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.18">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">479.67165820200</SimpleData>
+		<SimpleData name="CODICE">2023-05</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2003473015878,39.8544671898825 18.2005433893486,39.8543616783509 18.200311851587,39.8541702641446 18.2001826991953,39.8541857470295 18.2003473015878,39.8544671898825</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.19">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">11/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">448.50089701400</SimpleData>
+		<SimpleData name="CODICE">2023-06</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2362852994173,39.8383542872922 18.2364768801893,39.8383260582455 18.2364082934195,39.8380980398451 18.2362007875192,39.838134721115 18.2362852994173,39.8383542872922</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.20">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">08/08/2013</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">1439.67021795000</SimpleData>
+		<SimpleData name="CODICE">2023-07</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2423643512526,40.3680395998461 18.2423988462955,40.3680887075563 18.2424065793386,40.3680997164317 18.2423780185827,40.3681477327918 18.2423685224209,40.3681636977291 18.2423901091619,40.3681678275917 18.2425119109455,40.3681911299869 18.2425716850171,40.3681122406509 18.2425382876252,40.3679616143788 18.2424350460531,40.3678358258865 18.2424793371192,40.3677459323756 18.2424593332592,40.3676406852258 18.2422128423297,40.3674903199668 18.2421437850837,40.3676095053209 18.2421929031767,40.3678540603626 18.2422982341022,40.3679454741422 18.2423158758766,40.3679705893578 18.2423643512526,40.3680395998461</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.21">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">03/08/2016</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">748.01583297600</SimpleData>
+		<SimpleData name="CODICE">2023-08</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.858554958682,40.29870905457 17.8587721913966,40.2987585924649 17.8590139930877,40.2984933165904 17.8587852686526,40.2984074568331 17.8587532364818,40.2984494040916 17.858554958682,40.29870905457</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.22">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">03/08/2016</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">246.10226780100</SimpleData>
+		<SimpleData name="CODICE">2023-09</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.8578708720091,40.298573759044 17.8580252590598,40.2986328596581 17.8581288402873,40.2985045642439 17.8581034587167,40.2985051917717 17.8580241217983,40.2984870926691 17.8579823413302,40.298427945679 17.857974275238,40.2984183642503 17.8579619765028,40.29843684688 17.8578708720091,40.298573759044</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.23">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">03/07/2013</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">2525.84695414000</SimpleData>
+		<SimpleData name="CODICE">2023-10</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>15.3235682527822,41.5059233029704 15.323801318533,41.5058956770396 15.3238632484106,41.5058883362358 15.3238977770282,41.5058842434012 15.3239109804897,41.5059890679815 15.3239954522324,41.5059951774686 15.3240378403141,41.5059982431971 15.3240382680784,41.5060840386343 15.3242029829616,41.506054975868 15.3241836710385,41.5060901879686 15.3241600466052,41.5061332631625 15.3241401466777,41.5061695472966 15.3240507151003,41.5061768050455 15.3240265614611,41.5061868039579 15.3240384429034,41.5061778009804 15.3240260594919,41.5061788059394 15.3240241071268,41.5061878199813 15.3240080743782,41.5061944570733 15.3240105644966,41.5062503460416 15.3237724458448,41.506265226721 15.3237609744424,41.5062659435873 15.3237632641422,41.5062737204667 15.3237811310072,41.5063344045374 15.3237774046978,41.5063820796262 15.323920233767,41.5064144464714 15.3241658425199,41.5062362045945 15.324329939297,41.5060832165095 15.3243292083018,41.5060739535624 15.3243238174321,41.5060056420292 15.3243164009518,41.5059116623011 15.3243007255015,41.5058744462643 15.324253313656,41.5058674536918 15.3241869726752,41.5058731868367 15.3242408843447,41.5058619686984 15.3242928737519,41.5058558049325 15.324252233323,41.5057593177565 15.3241881314226,41.5056836518835 15.3241648226407,41.505656138148 15.324145589684,41.505633435504 15.3241393179132,41.5056485468258 15.3241242383724,41.5056440584915 15.3241385382733,41.5056251119912 15.3240991554161,41.5055786242651 15.323984454468,41.5054645530939 15.3239322332545,41.505482176459 15.323870513973,41.5055030051437 15.3238840973555,41.5056840918515 15.323884572412,41.5057794188207 15.3237579504738,41.5058179073692 15.323618693803,41.5058659629893 15.3235682527822,41.5059233029704</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.24">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">03/07/2013</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">2746.98195412000</SimpleData>
+		<SimpleData name="CODICE">2023-11</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>15.3227524855581,41.5050867008962 15.3226260050511,41.5051537863912 15.3226392063065,41.5052586111388 15.3227035589896,41.5054490881267 15.322793937701,41.5057729523837 15.3229854352352,41.506029802006 15.3234161725641,41.5059427958395 15.323364878759,41.5058285457395 15.3232377336916,41.5057621734186 15.3231232708913,41.5056957644259 15.3229312527847,41.5053340547039 15.322895105504,41.5052840391824 15.3227524855581,41.5050867008962</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.25">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">20/06/2012</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">9076.00381532000</SimpleData>
+		<SimpleData name="CODICE">2023-12</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>15.4323982598787,41.8122371084463 15.4328735378048,41.8123397448786 15.4331484432833,41.8122929533066 15.4329430922344,41.8120725767369 15.4328399808659,41.8118975699166 15.4331947845147,41.8116064487685 15.4334592365912,41.8115215664348 15.4333554565432,41.811247426048 15.4329373411028,41.8112184990693 15.4326844681085,41.8115092355498 15.4324605818101,41.8115634598417 15.4319813580744,41.8115423853115 15.4317904058142,41.8119472752434 15.4320058431218,41.8121523641786 15.4320670026912,41.812165571982 15.4323982598787,41.8122371084463</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.26">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">01/07/2014</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">611.49315846200</SimpleData>
+		<SimpleData name="CODICE">2023-13</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.2666355157717,40.4884843195978 17.2669845230698,40.4885032110987 17.2670032643085,40.4884787115742 17.2670778114774,40.4883812594273 17.2669403531962,40.4883038764737 17.2667122916649,40.4883169318898 17.2666939400547,40.4883569423632 17.2666355157717,40.4884843195978</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.27">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">19/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">1951.62580314000</SimpleData>
+		<SimpleData name="CODICE">2023-14</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.2668040409394,40.4881492503041 17.2670063343028,40.4881468412225 17.2671481381906,40.4881451522898 17.2671747373174,40.4881448354657 17.2672385349347,40.488050111769 17.2672371878122,40.4880101008196 17.2672389019171,40.487887100044 17.2672486490744,40.4878287788182 17.2672492378152,40.4878242364864 17.2672613258881,40.4877309728576 17.2672610867328,40.4877055575308 17.2672674007333,40.4877000192332 17.267273218557,40.4876743963366 17.267280490106,40.4876423709094 17.2673008375912,40.4875527561671 17.2673251300075,40.4874047187973 17.2673273924528,40.4873229924569 17.2673464640684,40.4872546082545 17.26734128477,40.4871902775577 17.2673486625349,40.4871471446885 17.2673540784219,40.4871184985566 17.2673660576825,40.4870551368395 17.2673671033031,40.486999222158 17.2673552424582,40.4869077894424 17.267347011821,40.4869099803678 17.2673078078161,40.4870150900037 17.2672195826566,40.4872516288042 17.2672406185409,40.4874313972574 17.267117297536,40.48766261928 17.2670559857265,40.4877584304958 17.2669701638867,40.4878925427419 17.2669393638559,40.4879406732554 17.2668708365696,40.4880192386033 17.2668040409394,40.4881492503041</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.28">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">20/06/2013</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">5627.96167898000</SimpleData>
+		<SimpleData name="CODICE">2023-15</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.7073459249546,40.3140886817329 17.7076370373629,40.3140767907022 17.7079046367984,40.3140658594535 17.7080348355316,40.3140605407019 17.7081665168823,40.3140551612342 17.7083846290987,40.3140595841814 17.7081637279302,40.3136739009507 17.7090270900632,40.3136751055978 17.7091343577042,40.3136752548174 17.7091426773442,40.3136752663867 17.7090528039456,40.3135346175824 17.7078285004574,40.3135435240082 17.7073559044898,40.3135593589397 17.7073549525899,40.3136098483262 17.7073459249546,40.3140886817329</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.29">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">27/07/2009</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">640.58177100800</SimpleData>
+		<SimpleData name="CODICE">2023-16</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.0055327345874,40.6408354557315 17.0060842881328,40.6410540237814 17.0062356682157,40.6411140115231 17.006303753125,40.6410889940606 17.0063607556272,40.6411118374679 17.006390742522,40.6410684158889 17.0063832034431,40.6410256465477 17.006224134941,40.6409378434425 17.0061520784566,40.6410391966209 17.0061179234363,40.6410251066894 17.0059499758432,40.6409558232239 17.005708568903,40.6408562348641 17.0057250492853,40.640779680867 17.0056489499857,40.6407360243205 17.0055286258109,40.6407503835251 17.0055748033644,40.6407775243258 17.005526051952,40.6408212717052 17.0055327345874,40.6408354557315</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.30">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">06/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">719.03587027800</SimpleData>
+		<SimpleData name="CODICE">2023-17</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.5805512416165,40.3374189532221 17.5807173634328,40.3373618447073 17.5807895963962,40.3372958831705 17.5807999223465,40.3371991279738 17.5807739957782,40.3371317827563 17.5807624819301,40.3370748404169 17.5807232333928,40.3370256667474 17.5805245619952,40.337083726249 17.5805588700181,40.3371258599045 17.5805729722081,40.3372506694431 17.5805123889333,40.3373771453663 17.5805282995536,40.3374268401021 17.5805512416165,40.3374189532221</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.31">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">06/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2022-23</SimpleData>
+		<SimpleData name="Area__mq_">2937.58550803000</SimpleData>
+		<SimpleData name="CODICE">2023-18</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>16.7738034869176,40.6520791319964 16.7738069247507,40.6520736192487 16.7738174416209,40.6520567548837 16.7738870558329,40.6519515100671 16.7739578050781,40.6518891436 16.7739281201432,40.6518313838053 16.7739147609318,40.6517825652023 16.7739337287156,40.6517393780285 16.7739371817004,40.6517178770766 16.7739444120162,40.6516871261408 16.7739399320151,40.6516587840343 16.7733997147168,40.6513289638677 16.7732420348351,40.6514540021746 16.7732426072696,40.6514619768407 16.7731945714129,40.6514916399831 16.7731286542765,40.6515439112195 16.7731817631638,40.6515946625208 16.7732636340395,40.6516485572586 16.7732887303097,40.6516849397739 16.7732931561985,40.6517001917558 16.7733878186657,40.6517814658823 16.773445971625,40.6518510446217 16.7734404832614,40.6518594333698 16.7734778311908,40.651881263437 16.7738034869176,40.6520791319964</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.32">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">12/07/2009</SimpleData>
+		<SimpleData name="Anno_inter">2015-16</SimpleData>
+		<SimpleData name="Area__mq_">189.46708152200</SimpleData>
+		<SimpleData name="CODICE">2016-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.2075121686122,40.8389488907875 17.2074630469022,40.8388787542109 17.2073486185569,40.8389255590594 17.2073532099327,40.8389413966045 17.2073566899017,40.8389534004441 17.2074051363525,40.8390400167065 17.2076159295669,40.8389467526156 17.2075773863299,40.8389200355815 17.2075121686122,40.8389488907875</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.33">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">08/06/2012</SimpleData>
+		<SimpleData name="Anno_inter">2015-16</SimpleData>
+		<SimpleData name="Area__mq_">3594.36801724000</SimpleData>
+		<SimpleData name="CODICE">2016-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>16.9977369606842,40.6755306263324 16.9975235591965,40.6752436307017 16.9969796624827,40.6754799375974 16.9972235515916,40.675766357103 16.9972341764269,40.6757844155388 16.9975582086963,40.6759847290619 16.9979221903951,40.6759549662842 16.9977369606842,40.6755306263324</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.34">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">31/07/2013</SimpleData>
+		<SimpleData name="Anno_inter">2015-16</SimpleData>
+		<SimpleData name="Area__mq_">1221.29191098000</SimpleData>
+		<SimpleData name="CODICE">2016-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2067096180809,40.4476097704979 18.2069172272968,40.4477142648596 18.2073207629536,40.4473842989126 18.2070059363998,40.4473549132627 18.2068572086214,40.4473682053421 18.2066344105558,40.4475604510946 18.2067096180809,40.4476097704979</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.35">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">17/07/2012</SimpleData>
+		<SimpleData name="Anno_inter">2015-16</SimpleData>
+		<SimpleData name="Area__mq_">1612.31280664000</SimpleData>
+		<SimpleData name="CODICE">2016-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.4292278710004,40.0390229040005 18.4292361606741,40.0390859629092 18.4291682189754,40.0393439214042 18.4292995645865,40.0394282039327 18.4295201982126,40.0393763874503 18.4294842123022,40.0391534433413 18.4294627286916,40.0390237266442 18.4294209974372,40.0387062867577 18.429304941482,40.0387163145242 18.4293167603674,40.0388062197133 18.4292007042212,40.0388162473586 18.4292278710004,40.0390229040005</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.36">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">28/07/2015</SimpleData>
+		<SimpleData name="Anno_inter">2016-17</SimpleData>
+		<SimpleData name="Area__mq_">3904.17319170000</SimpleData>
+		<SimpleData name="CODICE">2017-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.0252383773693,40.633458631266 17.0250602085908,40.6336085717166 17.0247641362049,40.63406614674 17.0249216249896,40.6342402090946 17.0250896254842,40.6342506088563 17.0252207955154,40.6341692285975 17.0252749429739,40.6341653633122 17.0255077825082,40.6338324363022 17.0254990987213,40.633754374344 17.0255337609429,40.6337089446652 17.0255817154776,40.6336394625312 17.025645014494,40.6334152695551 17.0254416505085,40.6333940509494 17.0253150169416,40.6334535524063 17.0252383773693,40.633458631266</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.37">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">28/07/2015</SimpleData>
+		<SimpleData name="Anno_inter">2016-17</SimpleData>
+		<SimpleData name="Area__mq_">2403.23007432000</SimpleData>
+		<SimpleData name="CODICE">2017-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.025670196293,40.6327758413894 17.0257041915168,40.6328809012561 17.0259907207249,40.6328431106218 17.0262540365654,40.6328249132018 17.0265753574822,40.6328019717207 17.0266926462341,40.6327935973408 17.0266625938812,40.63252348141 17.0264280173382,40.6325402299476 17.0260761523183,40.6325653517085 17.0260060893978,40.6325703537615 17.0258695958899,40.6325800984179 17.0258264054838,40.6326453713817 17.0257318717518,40.6326586541359 17.0257443192798,40.6327705497333 17.025670196293,40.6327758413894</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.38">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">30/08/2015</SimpleData>
+		<SimpleData name="Anno_inter">2016-17</SimpleData>
+		<SimpleData name="Area__mq_">8388.74806939000</SimpleData>
+		<SimpleData name="CODICE">2017-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.8592814512294,40.5809806486584 17.8593183491307,40.581259742038 17.8593198688664,40.5812602859689 17.8592664095157,40.5813318205589 17.8593892146129,40.5818664163422 17.8600784895784,40.5821104583348 17.8601231915052,40.5821262851163 17.8604300972862,40.5822333681356 17.8604592972051,40.581596509821 17.8596578991043,40.5810944478366 17.8592814512294,40.5809806486584</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.39">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">27/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2017-18</SimpleData>
+		<SimpleData name="Area__mq_">1559.22091160000</SimpleData>
+		<SimpleData name="CODICE">2018-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.7538708578333,40.7159166301896 17.7538246562104,40.7159031682398 17.7536247203745,40.7159399706968 17.7535378042474,40.7159832261651 17.7535388586561,40.7161181819128 17.7535612697053,40.7162606351826 17.7537622432589,40.7162489739877 17.7537693879445,40.716312862156 17.7540163553671,40.7162863755998 17.7540292475126,40.7161979870297 17.7541163583372,40.7161959071586 17.7540993400305,40.7161101475334 17.7539652471944,40.7160313608848 17.7538831796733,40.7159156599353 17.7538708578333,40.7159166301896</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.40">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">25/06/2016</SimpleData>
+		<SimpleData name="Anno_inter">2017-18</SimpleData>
+		<SimpleData name="Area__mq_">5401.29438510000</SimpleData>
+		<SimpleData name="CODICE">2018-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.2884018085689,40.5184520084991 17.2886132867145,40.5184668485764 17.2890790386047,40.5183093442099 17.289319128806,40.518054988719 17.2879836178388,40.5179140540422 17.2879026979661,40.5180735652343 17.287821055005,40.5184135733411 17.288067951631,40.518428579918 17.2884018085689,40.5184520084991</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.41">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">17/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2017-18</SimpleData>
+		<SimpleData name="Area__mq_">310.95539770500</SimpleData>
+		<SimpleData name="CODICE">2018-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2247465262626,40.1516200500833 18.2247560489365,40.1517101461801 18.2247600113958,40.1517476357801 18.2248284355236,40.1517437966124 18.2249379418434,40.151727423147 18.2249632567532,40.1516018073806 18.2249280913273,40.1516047673706 18.2249200641982,40.151542371632 18.2248031687358,40.1515473929606 18.2248118089398,40.1516145551444 18.2247465262626,40.1516200500833</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.42">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">28/07/2015</SimpleData>
+		<SimpleData name="Anno_inter">2017-18</SimpleData>
+		<SimpleData name="Area__mq_">1909.30986731000</SimpleData>
+		<SimpleData name="CODICE">2018-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.0247641362049,40.63406614674 17.0251135642211,40.6334868413185 17.0246799158712,40.6335142774106 17.0244515974155,40.6339758863337 17.0247641362049,40.63406614674</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.43">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">15/09/2013</SimpleData>
+		<SimpleData name="Anno_inter">2017-18</SimpleData>
+		<SimpleData name="Area__mq_">1715.75741246000</SimpleData>
+		<SimpleData name="CODICE">2018-05</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.2626330281477,40.5288084114967 17.2633679961971,40.5286194196872 17.2633302073526,40.5284092345123 17.2624372084408,40.5286454693419 17.2625392656998,40.5287879932312 17.2626330281477,40.5288084114967</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.44">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">04/06/2015</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="Area__mq_">139.31067448100</SimpleData>
+		<SimpleData name="CODICE">2019-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>16.1708054384715,41.8718737616887 16.1706713722881,41.8718782618076 16.1706716478118,41.871928302358 16.1707280681778,41.8719219119856 16.1707328494233,41.8719624704667 16.17069137419,41.8719609868901 16.1706692399712,41.8720060132616 16.17080300283,41.8719979770829 16.1708103593628,41.8719439885585 16.1708240783377,41.8719431429438 16.1708072464549,41.8718716039276 16.1708055167832,41.8718715502478 16.1708054384715,41.8718737616887</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.45">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">23/06/2013</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="Area__mq_">15849.55389190000</SimpleData>
+		<SimpleData name="CODICE">2019-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>16.7736660177332,41.096841672761 16.7741026594336,41.0970214181763 16.7741520281439,41.0970057927862 16.774212786079,41.096986562623 16.7744973201907,41.0968965057093 16.7745783398438,41.0968708622853 16.7747275142534,41.096823647089 16.7749438931046,41.0967551605533 16.7749577078066,41.0967507880139 16.7753094460051,41.0966394573819 16.7754180933902,41.0966050684975 16.7756749982627,41.0965237528606 16.7757633812429,41.0964957776656 16.7763009029357,41.0963256380416 16.7761630420678,41.0963089706082 16.7757211659768,41.09625554644 16.7750266397519,41.0956809323958 16.7747035442844,41.0955075422828 16.7747127156639,41.0955919384666 16.774613878978,41.0955986996694 16.7745968269049,41.0956210612926 16.7745409121452,41.0956943862602 16.7744926227737,41.0957577113689 16.7744679451153,41.0957900727925 16.7736660177332,41.096841672761</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.46">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">10/07/2014</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="Area__mq_">330.05790883700</SimpleData>
+		<SimpleData name="CODICE">2019-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.5596419008146,40.6687287030295 17.5596513469371,40.6688074869181 17.5596980523261,40.6688102023004 17.5597994284324,40.6686169521956 17.5598857796992,40.6686714667339 17.5599346659557,40.6686914139755 17.5600021013427,40.6686599244518 17.5598237073818,40.6685786444376 17.5598117766263,40.6685732085189 17.5598423660066,40.668536362722 17.5598730527765,40.668499399569 17.5598196065485,40.6684899084682 17.5597597024183,40.6685427120346 17.559741436746,40.6685715508534 17.5596992550277,40.6686381495011 17.5596419008146,40.6687287030295</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.47">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">10/07/2014</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="Area__mq_">1104.30449150000</SimpleData>
+		<SimpleData name="CODICE">2019-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.5604135325252,40.6685832846946 17.5605508554717,40.668572736103 17.5605695744112,40.6685672918844 17.5605893754055,40.6685615329564 17.5606490303728,40.6684743998921 17.560624146054,40.6683855167501 17.5605854792598,40.668341982839 17.5605410912749,40.6683297595123 17.5604597224623,40.6683073525455 17.5603420744208,40.6683163897332 17.5603060269711,40.6683438666302 17.560222905613,40.6684072251331 17.5601748573077,40.6684471851866 17.5602056701897,40.6687027442061 17.5604135325252,40.6685832846946</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.48">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">23/06/2015</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="Area__mq_">1286.19248075000</SimpleData>
+		<SimpleData name="CODICE">2019-05</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.2294068877401,40.5972702797253 17.2294199540495,40.5973257754031 17.2297075559732,40.5973620880156 17.2297869993676,40.5973455978845 17.2297914166248,40.5973842151356 17.2299086192235,40.5973755997245 17.2298983224986,40.5972855834202 17.2300155249049,40.5972769678841 17.230005228056,40.597186951584 17.2298880258139,40.597195567106 17.2298807901786,40.5971323110389 17.2296892897908,40.5970383090086 17.2295703792509,40.5970730186319 17.2295003313594,40.5971142510597 17.2294119261837,40.5971662890406 17.2294225840213,40.5972594688969 17.2294068877401,40.5972702797253</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.49">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">16/08/2011</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="Area__mq_">1420.36750515000</SimpleData>
+		<SimpleData name="CODICE">2019-06</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2984352595111,40.1682062696224 18.2984459790785,40.1682888079166 18.2983552511533,40.1683544324932 18.2985259513661,40.1684307806211 18.2986434811922,40.1683703949061 18.2987121723858,40.1683351019169 18.2987667182844,40.1683599303 18.2989439284315,40.1684405930917 18.2988581837468,40.1682096847193 18.2988450746768,40.1680007262715 18.2987609644499,40.1679979713854 18.2987510673836,40.1679976472199 18.2985282085446,40.1680165710928 18.2985515630298,40.1681963940067 18.2984352595111,40.1682062696224</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.50">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">11/06/2009</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="Area__mq_">329.47084445800</SimpleData>
+		<SimpleData name="CODICE">2019-07</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.0098904393478,40.1125288753106 18.0100192968688,40.1124260489887 18.0099732059577,40.11238614708 18.0098773114626,40.1123031289038 18.009851375964,40.1123052556307 18.0097663621842,40.1123493989557 18.0097151318049,40.1123760002253 18.0097763712448,40.1124294035423 18.0098904393478,40.1125288753106</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.51">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="Area__mq_">1882.71073609000</SimpleData>
+		<SimpleData name="CODICE">2019-08</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2047388439888,39.855737808422 18.2048009578327,39.8559010967345 18.2049405541165,39.8561047310863 18.2049446255374,39.8561106701993 18.2050584034814,39.8562766412561 18.2050882942854,39.8563202436443 18.2051762534343,39.8564485512464 18.2052319640658,39.8565298170537 18.2052320574366,39.8565299532545 18.205320898287,39.8564285637229 18.205261417816,39.8563504510237 18.2051986474842,39.8562680176787 18.2051313014771,39.8561795750413 18.2050581716267,39.8560835364109 18.2050104059681,39.8560208074227 18.2050941524731,39.855930556751 18.2051769522224,39.8557828892428 18.2051462610635,39.8556550434027 18.2050069410698,39.855585016433 18.2049118693507,39.8556019452613 18.2047388439888,39.855737808422</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.52">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="Area__mq_">2438.01297292000</SimpleData>
+		<SimpleData name="CODICE">2019-09</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2008939070756,39.8544846357013 18.2013119925889,39.8542323796648 18.2010648687647,39.8538388223362 18.2008542169208,39.8538970722535 18.2009650733953,39.8540626625224 18.2008788441343,39.8540942007609 18.2003152976575,39.8537451300118 18.2002785812192,39.8538200243773 18.2008178650364,39.8541792984127 18.200719605657,39.8542606592548 18.2008939070756,39.8544846357013</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.53">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2018-19</SimpleData>
+		<SimpleData name="Area__mq_">1634.93322156000</SimpleData>
+		<SimpleData name="CODICE">2019-10</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2012597581952,39.8538405884196 18.2015501834994,39.8539684096421 18.201872960269,39.8536615870145 18.2015292140468,39.8536041326696 18.2013882118697,39.8536106322433 18.2011775390537,39.8535354219963 18.2006904573444,39.8533677500666 18.2006859409702,39.8534036233807 18.2010386807838,39.8535416409861 18.2013726825302,39.853742139334 18.2012597581952,39.8538405884196</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.54">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">11/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2019-20</SimpleData>
+		<SimpleData name="Area__mq_">1382.31410874000</SimpleData>
+		<SimpleData name="CODICE">2020-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2412738323837,39.8420909874284 18.241397053198,39.8421342628027 18.2415243054003,39.8420491438872 18.2416190858731,39.8420950816597 18.2416589877143,39.8421144210615 18.2416233110769,39.8421709936196 18.2416451421668,39.8421838014582 18.2416678267489,39.8421971100129 18.2416904170334,39.842179967488 18.2417674041409,39.8421215461106 18.2417660066757,39.842110609729 18.2418610887597,39.8420468038514 18.2417456380806,39.8419646244417 18.2419624454366,39.8418618901467 18.2421791525668,39.8421570671169 18.2422855936243,39.8421064247221 18.2420374778423,39.8417482562228 18.2416690167315,39.8418983547458 18.241631252566,39.8419137384811 18.2412738323837,39.8420909874284</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.55">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">05/07/2012</SimpleData>
+		<SimpleData name="Anno_inter">2019-20</SimpleData>
+		<SimpleData name="Area__mq_">399.71726133200</SimpleData>
+		<SimpleData name="CODICE">2020-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>15.7391306933677,41.7096948177757 15.7388918056681,41.7097085389997 15.7389086692481,41.7098887120014 15.7391475576425,41.7098749907306 15.7391306933677,41.7096948177757</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.56">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">25/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2019-20</SimpleData>
+		<SimpleData name="Area__mq_">1875.38020683000</SimpleData>
+		<SimpleData name="CODICE">2020-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.4594853270062,40.6615910638623 17.4594942449457,40.661666466275 17.459376948653,40.6616753562616 17.4593875905967,40.6617653364023 17.4595048870538,40.6617564464008 17.4595272154015,40.6619452336537 17.4595600589393,40.6620246249139 17.4596049949901,40.6621332465394 17.459900989161,40.6620764031512 17.4598780615787,40.6619097356941 17.4597636191769,40.661827623088 17.4597487385433,40.6618169461859 17.4596491770302,40.6617455103411 17.4596194159118,40.6617241565539 17.4596474964555,40.6615640642678 17.4596511551641,40.6615432052555 17.4597113273176,40.6615006397824 17.4597623091405,40.6614645754364 17.4598145486699,40.6614276213314 17.4598757787015,40.6613905675583 17.4599366926099,40.6614513579959 17.4599429294833,40.6614575822189 17.4601057924208,40.6616201142725 17.4601775105792,40.661614678171 17.4600842028982,40.6614401771647 17.4600521217728,40.6613801798414 17.4598917404773,40.6613139636425 17.4594853270062,40.6615910638623</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.57">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">18/06/2012</SimpleData>
+		<SimpleData name="Anno_inter">2019-20</SimpleData>
+		<SimpleData name="Area__mq_">786.33399019500</SimpleData>
+		<SimpleData name="CODICE">2020-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.1517481856843,40.5164042332738 17.1519472006653,40.5163897471574 17.152171343943,40.5164265363102 17.1521933260623,40.5162810574826 17.1522071946707,40.5161892740195 17.1517859221994,40.5162199387757 17.1517481856843,40.5164042332738</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.58">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">18/06/2012</SimpleData>
+		<SimpleData name="Anno_inter">2019-20</SimpleData>
+		<SimpleData name="Area__mq_">43104.49041340001</SimpleData>
+		<SimpleData name="CODICE">2020-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>15.5320075927309,41.4419864831498 15.5331624840206,41.4434178567254 15.5334274254592,41.4432835627598 15.5332351252204,41.4430056965783 15.5333682001197,41.4425474980162 15.5336696220245,41.4422257929552 15.5343847985664,41.4420138082045 15.5421937802645,41.4416711549397 15.543996235703,41.4408733174382 15.5440845806727,41.4405297133572 15.5421037343018,41.4412619625071 15.533635890655,41.4417872278348 15.5331982591984,41.4422165390589 15.5328486078936,41.4422181590973 15.5320075927309,41.4419864831498</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.59">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">09/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2020-21</SimpleData>
+		<SimpleData name="Area__mq_">1860.30178779000</SimpleData>
+		<SimpleData name="CODICE">2021-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2027567288857,39.8549785118676 18.202699747095,39.8550188518516 18.2026968242472,39.8550209210656 18.2026515245154,39.855052990737 18.202602339482,39.855028882809 18.2025705159932,39.8550132845803 18.2023975142307,39.8551763125323 18.2024955638535,39.8552531838584 18.2025642208054,39.8553048596212 18.2026232560614,39.8553492933613 18.2022476719412,39.855571304178 18.2023973369331,39.8556510582191 18.2030140261024,39.8551878724651 18.2029478806077,39.8551300000448 18.2028946677123,39.8550834425908 18.2027567288857,39.8549785118676</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.60">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">15/07/2012</SimpleData>
+		<SimpleData name="Anno_inter">2020-21</SimpleData>
+		<SimpleData name="Area__mq_">855.48220055700</SimpleData>
+		<SimpleData name="CODICE">2021-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>15.6478167078538,41.7130264634341 15.6478139094416,41.7129960827433 15.6477478766154,41.7129998148783 15.6474638333119,41.7131064329354 15.6473310518969,41.7131139371533 15.6473293377264,41.7132045985587 15.6473526731231,41.7132032797601 15.6473609713389,41.7132933753016 15.647480430058,41.7132866240039 15.6474783353866,41.7132638822033 15.6478485918812,41.7131947524892 15.6478454424354,41.7131754295935 15.6478308160568,41.7130856917446 15.6478167078538,41.7130264634341</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.61">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">30/06/2017</SimpleData>
+		<SimpleData name="Anno_inter">2020-21</SimpleData>
+		<SimpleData name="Area__mq_">5499.76218036000</SimpleData>
+		<SimpleData name="CODICE">2021-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.1304050943853,40.5638782542894 17.1303976131075,40.5638855877234 17.1302987342699,40.5639825123411 17.1302976166044,40.5639836079152 17.1300860130575,40.5641910281692 17.1299968266015,40.5642784509659 17.1303469829339,40.56441066214 17.1303985396946,40.5644301286802 17.1305937009342,40.5645038163557 17.1306002023241,40.5645062710984 17.1309637793748,40.5646435467268 17.1310035284925,40.5646585546788 17.1310849232844,40.564689286595 17.1311272146773,40.5646495836329 17.1311936511846,40.5645872132267 17.1312319954847,40.5645512156371 17.131300460116,40.5644869409864 17.1313367760266,40.5644528475154 17.131407268732,40.5643866686523 17.1314057578912,40.5643732638505 17.1304637988956,40.5638207098176 17.1304050943853,40.5638782542894</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.62">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">08/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2020-21</SimpleData>
+		<SimpleData name="Area__mq_">795.07681785400</SimpleData>
+		<SimpleData name="CODICE">2021-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.3017044578699,40.1698375883495 18.3017161401351,40.1699274991617 18.3017088733987,40.1699281164245 18.3019420487142,40.1700714032208 18.3016634020294,40.1702955914073 18.3016831059583,40.170293917696 18.3016525092364,40.1703118792341 18.3017024380381,40.1703882385249 18.3018268817221,40.1702817048441 18.3018744611775,40.1702409729306 18.3019447635364,40.1701807882283 18.3019802806334,40.1701503825664 18.3020626450587,40.170079871457 18.3020860998103,40.1700597921141 18.3020801190891,40.1700137646785 18.3020427905194,40.1699906548759 18.3019522422555,40.1699345970906 18.3019136739808,40.1699107196952 18.3018243657589,40.1698554293749 18.301784557709,40.1698307843366 18.3017044578699,40.1698375883495</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.63">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">30/06/2021</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">4650.88159702000</SimpleData>
+		<SimpleData name="CODICE">2022-01</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>15.8594733030711,41.9043212574555 15.8594733637825,41.9043218891195 15.859537678021,41.9042792183728 15.8597086216319,41.9045791829853 15.859745241263,41.9046434411571 15.8597585672178,41.904666824795 15.8598337515816,41.9046624268743 15.8599826838001,41.9046067241581 15.8601207824628,41.9045550730839 15.8602152926549,41.9045197246406 15.8603339734867,41.9044753357961 15.8601860515434,41.9042155270904 15.8600716363026,41.9040145676321 15.8600464788852,41.9039703808394 15.8599006154339,41.9040245719092 15.8596931649677,41.9041016432606 15.859611295091,41.9041320591487 15.8592182019885,41.9041742304587 15.8588299336777,41.9042158827881 15.8587457779396,41.9042732459598 15.8587931191456,41.904451603815 15.8590027111659,41.9044393455696 15.8589940561611,41.9043492884592 15.8591138679253,41.9043422809227 15.8591225231051,41.9044323380212 15.8593621469104,41.9044183224954 15.8593534913803,41.9043282654208 15.8594733030711,41.9043212574555</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.64">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">23/08/2011</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">7339.81554560000</SimpleData>
+		<SimpleData name="CODICE">2022-02</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>15.3221111933704,41.506793242779 15.3221467763835,41.5072057563751 15.3223517506295,41.5071948103869 15.3231726018708,41.5066157168745 15.3231850406827,41.5066069414263 15.3232853735441,41.506536157535 15.3234173347292,41.5064430597901 15.3236538859113,41.506310215606 15.3236780473838,41.5062966467673 15.3237399421837,41.5062583064741 15.3238535074232,41.5061879590902 15.3238556280756,41.5062125363471 15.3239744000476,41.5062025333669 15.3239666216677,41.5061123878428 15.3239640576166,41.5060826723245 15.3234736628856,41.5059452637906 15.3234534532444,41.5059586777479 15.3225684178172,41.5065461026825 15.3225631572302,41.506549594242 15.3224552609919,41.5066212070522 15.3223017877729,41.5066541132863 15.3222203345409,41.506671577599 15.3221693878397,41.5066825010003 15.32213194999,41.5067537437976 15.3221111933704,41.506793242779</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.65">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">25/07/2011</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">1899.71120644000</SimpleData>
+		<SimpleData name="CODICE">2022-03</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>16.9267025224115,40.9116294229032 16.9264668917181,40.9116459453159 16.926536551119,40.9122761169887 16.92689000062,40.9122513328705 16.9268402412082,40.9118012105019 16.9267224255691,40.911809471946 16.9267025224115,40.9116294229032</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.66">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">16/07/2012</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">717.12310701400</SimpleData>
+		<SimpleData name="CODICE">2022-04</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.0146098370167,40.6253970214392 17.0145937944795,40.625398165013 17.0145832079503,40.6254010124325 17.0144797183527,40.6254288475816 17.0143704090103,40.6254887183425 17.0143624206354,40.6255559732312 17.014433185868,40.6255791440789 17.0146119089945,40.6255973802613 17.0146122682422,40.6256759296322 17.014687691247,40.6256679735634 17.0146626422649,40.6256201378661 17.0148242811274,40.6256028260841 17.0148126250461,40.6254760264229 17.0146119279752,40.6253968723875 17.0146098370167,40.6253970214392</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.67">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">26/07/2021</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">13266.21343100000</SimpleData>
+		<SimpleData name="CODICE">2022-05</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.1552392944322,40.3172193386841 18.1554241494983,40.3172529041314 18.1555904983157,40.3172809681104 18.1559435899443,40.3173405357688 18.156152382219,40.3169039652073 18.1557464507734,40.3167227177365 18.1556238526474,40.3166855317404 18.1555440185294,40.3166613166665 18.1554978068291,40.3166525479268 18.1553811234729,40.3166304069907 18.1543480139915,40.3164343662371 18.154301212104,40.3164788344346 18.1539858710299,40.3167784496578 18.1538810364047,40.3168780554981 18.1513538951076,40.3164440524445 18.1512567251151,40.3164961144052 18.1537728124597,40.3169530473353 18.1542099323652,40.3170324240116 18.1542553711654,40.317040675144 18.1545530530175,40.3170947300432 18.1547379313286,40.3171283009478 18.1548961737789,40.3171570349472 18.1550998524066,40.3171940189848 18.1552392944322,40.3172193386841</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.68">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">22/07/2020</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">1019.85974084000</SimpleData>
+		<SimpleData name="CODICE">2022-06</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.387611026362,40.3402904596734 17.3876248302205,40.3404094087929 17.3876594154239,40.3404843990177 17.3879805322165,40.340430853378 17.388075611361,40.3404157413465 17.388094962206,40.3404647804239 17.3881002392455,40.3404781535288 17.3881507120386,40.340460903963 17.3880923620607,40.3402948827044 17.3881617892892,40.3402804924554 17.3881373980945,40.3401894749698 17.387956546009,40.3402241718428 17.387611026362,40.3402904596734</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.69">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">19/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">281.46816681100</SimpleData>
+		<SimpleData name="CODICE">2022-07</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.0096269594965,40.1121737565729 18.0095289619064,40.1122363213899 18.0095855622175,40.112283326108 18.0095996828737,40.1122950528389 18.0096905039314,40.1123688224536 18.0097617589507,40.1123126042352 18.0098157049908,40.1122854891928 18.009751532099,40.1122308583326 18.0096779285399,40.1121681989178 18.0096584213912,40.1121536702454 18.0096269594965,40.1121737565729</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.70">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">28/06/2016</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">596.85387778400</SimpleData>
+		<SimpleData name="CODICE">2022-08</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.0243837265263,40.0963893451743 18.0244005149891,40.0963879657153 18.0244795227003,40.096521803314 18.0246265580116,40.0964602764588 18.0246821195401,40.0964370266879 18.0247484923727,40.0964064792053 18.0246719023786,40.0963554747828 18.0245640403763,40.0962836448233 18.0245438131133,40.0962701745874 18.0244636726794,40.0962168054115 18.0244229356161,40.0962424367902 18.0243264087168,40.0963031704804 18.0243837265263,40.0963893451743</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.71">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">08/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">719.01711510000</SimpleData>
+		<SimpleData name="CODICE">2022-09</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2499069168404,39.961453271807 18.2499244705549,39.9615900409611 18.2501563497224,39.9615704149782 18.2501134404197,39.9612360966247 18.2499956905504,39.9612318001882 18.2499310184729,39.9612294403934 18.2499215321215,39.9613175400838 18.2499069168404,39.961453271807</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.72">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">22/07/2016</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">507.89408274400</SimpleData>
+		<SimpleData name="CODICE">2022-10</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2282200165176,39.8560491436123 18.2281528929269,39.8560106465341 18.2279342165682,39.8560424770119 18.2280114663422,39.8562486193586 18.2282026771101,39.8562018242956 18.2282706776541,39.8561484522204 18.2282200165176,39.8560491436123</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.73">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">09/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">1164.45649785000</SimpleData>
+		<SimpleData name="CODICE">2022-11</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2018140453773,39.8549835919295 18.2018264322496,39.8549856128644 18.2017927398739,39.8550041997884 18.2016875010226,39.8551615412311 18.2017532869924,39.8551930889465 18.2018992418159,39.8550069768946 18.2019181498783,39.8549956116198 18.201989366274,39.8549528047458 18.2020255829369,39.8549310355353 18.202097494332,39.8548895788011 18.2020982635399,39.8548891353543 18.2021749516128,39.854844924775 18.2020816169089,39.8547582709311 18.2019432527301,39.8546298102406 18.2019256348407,39.854631294687 18.2018381147229,39.8546835061607 18.2017481603085,39.854737169704 18.2017293706379,39.8547483789216 18.2016687295831,39.8547845550714 18.2017477372515,39.8548927708615 18.2017658106174,39.8549175256604 18.2018140453773,39.8549835919295</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.74">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">08/06/2014</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">3398.62248714000</SimpleData>
+		<SimpleData name="CODICE">2022-12</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2001014831019,39.8548274330573 18.2000067546453,39.8547400151505 18.1999339180208,39.8546727993887 18.2000512681124,39.8545697516461 18.1999510523767,39.8545248841181 18.1998216490144,39.8544669487945 18.1997801308098,39.8544483605802 18.1996975908097,39.8544114063241 18.1996092095031,39.8543718367252 18.1994756452304,39.8545061218352 18.1994118038238,39.8545703075588 18.1993719121424,39.8546104143129 18.1993337279778,39.8546488042898 18.1995000208603,39.8547507062338 18.1994056076432,39.8548435935152 18.1994020134481,39.8548471296136 18.199304539399,39.8549430279132 18.1992980270782,39.8549494349448 18.1991468167966,39.8550982000845 18.1993520701211,39.8552031157667 18.1994270205553,39.8551145538324 18.1996428494739,39.854859527459 18.1996438250566,39.85485840505 18.1999967900879,39.8550232539706 18.2001075812291,39.8548753840467 18.2001014831019,39.8548274330573</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.75">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">03/08/2015</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">1655.22575438000</SimpleData>
+		<SimpleData name="CODICE">2022-13</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>16.0508484920195,41.720731426937 16.0506887050086,41.720767003887 16.0506044076601,41.7209398365382 16.0507388977399,41.7210528202162 16.0508470983115,41.7211319284605 16.0510641239106,41.7210854446728 16.051133526523,41.7209705963287 16.0511748022627,41.7208861569201 16.0513659012581,41.7207726757955 16.0513191872307,41.7207004219269 16.0511758900744,41.720804727933 16.0510131804919,41.7207536533118 16.0509296048078,41.7207277184991 16.0508484920195,41.720731426937</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.76">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">22/07/2012</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">1389.28619894000</SimpleData>
+		<SimpleData name="CODICE">2022-14</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.1935818640847,40.8225127913101 17.1937471294714,40.8225314239244 17.1936309379157,40.8227878632108 17.1937709567784,40.8228172460278 17.1938420762204,40.8226755517415 17.1938566716899,40.8226310409335 17.1939747103755,40.8225570818074 17.1940482153542,40.822565368791 17.194056227135,40.8223211714441 17.1935386285021,40.8223340686747 17.1935818640847,40.8225127913101</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.77">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">09/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">2449.62340584000</SimpleData>
+		<SimpleData name="CODICE">2022-15</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2024483733712,39.8558428148769 18.2027864518995,39.8559631194878 18.2028792062696,39.8559575053224 18.202947667169,39.8558976527835 18.2030143014753,39.8558836088335 18.2031772969017,39.8558989319887 18.2033719512905,39.8559048283962 18.2035680079049,39.855874403932 18.20364154684,39.855796107352 18.2037167076153,39.8557101395324 18.2038496830801,39.8556332501425 18.2034862474554,39.8554358607881 18.2033157353092,39.8555992025867 18.2031672224318,39.8556399143378 18.2029407370494,39.8558337829326 18.2028391007942,39.8559037040299 18.2026268972098,39.8558516085888 18.2024895886672,39.8557928671764 18.2024813991383,39.8557869924146 18.2024483733712,39.8558428148769</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.78">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">30/07/2021</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">1344.40697016000</SimpleData>
+		<SimpleData name="CODICE">2022-16</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>18.2244703449889,39.8565983568089 18.2245938913258,39.8562784263502 18.2243507912777,39.8562642184564 18.224183682348,39.8562879339566 18.2240073777269,39.8562737734182 18.2236492032036,39.8562322602765 18.2235495765823,39.8562178724961 18.2233905085717,39.8561720306146 18.2233575118807,39.8562894629252 18.22345827974,39.8562757030442 18.223642861528,39.8562553156811 18.2238647962842,39.8562929928883 18.224079765394,39.8563403963792 18.2241941803063,39.8564592342445 18.2243471442328,39.8565560269698 18.224376969961,39.8565590102291 18.2244703449889,39.8565983568089</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.79">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">25/07/2017</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">3942.93150553000</SimpleData>
+		<SimpleData name="CODICE">2022-17</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.4583469744345,40.6625480532255 17.4589714452382,40.662787011848 17.4592511107336,40.6626241183451 17.4593951609962,40.6627116115016 17.4596627008447,40.6626677774945 17.4597614826139,40.662715719989 17.4600087978735,40.6626174769942 17.4598322104079,40.662269529838 17.4598711696181,40.6622665736203 17.4597711336853,40.6621268541541 17.4596049949901,40.6621332465394 17.4597123777692,40.6623163824608 17.4595545775862,40.6624508240202 17.4594347394673,40.6622877806448 17.4592043076736,40.6623724923697 17.4592636836967,40.6625404370225 17.4590822413752,40.6626277169896 17.4585380391932,40.6623819224969 17.4583469744345,40.6625480532255</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.80">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">19/06/2012</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">3747.16506612000</SimpleData>
+		<SimpleData name="CODICE">2022-18</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.3016774053785,40.3836245824865 17.3017537920967,40.3838307857356 17.3022324282121,40.3837693905522 17.3027951235404,40.3834820904982 17.3025126983689,40.3833306048514 17.3023319898312,40.3834714871974 17.3021799439587,40.383399773077 17.3020965754371,40.3832946582876 17.3018567915485,40.3831652021214 17.3016600313834,40.383303352378 17.3017796742496,40.3834779117362 17.3016774053785,40.3836245824865</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="anomalie_edilizie_poligoni.81">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#anomalie_edilizie_poligoni">
+		<SimpleData name="incendio">03/08/2016</SimpleData>
+		<SimpleData name="Anno_inter">2021-22</SimpleData>
+		<SimpleData name="Area__mq_">1679.90367346000</SimpleData>
+		<SimpleData name="CODICE">2022-19</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.8572839223305,40.29837379223 17.8574285191317,40.2984369488116 17.8577901869557,40.2978903506238 17.8576134950084,40.2978337076235 17.8575409170635,40.2978250154391 17.8574408575768,40.2978436947388 17.8573117558426,40.298029918305 17.8572789404535,40.298137498361 17.8572839223305,40.29837379223</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>
